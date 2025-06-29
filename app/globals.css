@@ -10,6 +10,7 @@
 @theme inline {
   --primary: var(--primary);
   --primary-bold: var(--primary-bold);
+  --bg-black-400: rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -20,16 +21,13 @@ html,
 body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 body {
   color: var(--foreground);
-}
-
-main {
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.05);
-  text-align: center;
+  background-color: #020202;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import AnimatedBackground from "@/components/AnimatedBackground";
+import Background from "@/components/Background";
 
 const font = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -38,7 +38,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Jakub Korytko" />
       </head>
       <body className={`${font.className} ${font.variable} antialiased`}>
-        <AnimatedBackground />
+        <Background />
         {children}
       </body>
     </html>
