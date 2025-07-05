@@ -21,6 +21,7 @@ const tsParticlesConfig = {
   fpsLimit: 30,
   style: {
     filter: "blur(40px)",
+    opacity: "0.8",
   },
   particles: {
     size: {

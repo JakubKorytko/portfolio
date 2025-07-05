@@ -10,7 +10,10 @@
 @theme inline {
   --primary: var(--primary);
   --primary-bold: var(--primary-bold);
-  --bg-black-400: rgba(0, 0, 0, 0.4);
+}
+
+section {
+  width: 100%;
 }
 
 * {
@@ -19,7 +22,6 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
