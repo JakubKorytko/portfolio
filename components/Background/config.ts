@@ -1,7 +1,7 @@
 import { IParticlesProps } from "@tsparticles/react";
 
-const BASE_SIZE = 100;
-const BASE_DISTANCE = 200;
+const BASE_SIZE = 80;
+const BASE_DISTANCE = 225;
 
 const tsParticlesConfig = {
   base: {
@@ -9,33 +9,33 @@ const tsParticlesConfig = {
     height: 1305,
     size: {
       min: 40,
-      max: 300,
+      max: 500,
       value: BASE_SIZE,
     },
     distance: {
       min: 80,
-      max: 250,
+      max: 500,
       value: BASE_DISTANCE,
     },
   },
   fpsLimit: 30,
   style: {
     filter: "blur(40px)",
-    opacity: "0.8",
+    opacity: "0.1",
   },
   particles: {
     size: {
       value: BASE_SIZE,
     },
     opacity: {
-      value: 0.02,
+      value: 0.1,
     },
     number: {
-      value: 1500,
+      value: 1600,
     },
     reduceDuplicates: true,
     color: {
-      value: "#ffab6e",
+      value: "#ffffff",
     },
     move: {
       enable: true,

@@ -10,6 +10,7 @@
 @theme inline {
   --primary: var(--primary);
   --primary-bold: var(--primary-bold);
+  --bg-black-400: rgba(0, 0, 0, 0.2);
 }
 
 section {
@@ -29,6 +30,8 @@ body {
 body {
   color: var(--foreground);
   background-color: #020202;
+  background-image: url('/images/bg.jpg');
+    background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
