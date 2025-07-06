@@ -1,18 +1,14 @@
-import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Background from "@/components/Background";
+import appData from "@/appData.ts";
 
 const font = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Jakub Korytko",
-  description:
-    "Portfolio of Jakub Korytko, Software Engineer specializing in JavaScript, TypeScript, and React.",
-};
+export const { metadata } = appData;
 
 export default function RootLayout({
   children,
