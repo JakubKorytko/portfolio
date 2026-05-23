@@ -4,3 +4,11 @@ overrides:
   minimatch@^9.0.0: 9.0.9
   micromatch@4.0.8>picomatch: 2.3.2
   postcss@<8.5.10: 8.5.15
+
+# Approved dependency lifecycle scripts (pnpm 11+). Without this, Docker/CI hits
+# ERR_PNPM_IGNORED_BUILDS for sharp / unrs-resolver. Generated via:
+#   pnpm approve-builds sharp unrs-resolver
+# See https://pnpm.io/settings
+allowBuilds:
+  sharp: true
+  unrs-resolver: true

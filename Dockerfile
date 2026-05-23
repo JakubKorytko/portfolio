@@ -2,7 +2,7 @@
 FROM node:24-slim AS builder
 WORKDIR /app
 
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN corepack enable && corepack prepare pnpm@11.2.2 --activate
 
 # pnpm-workspace.yaml holds overrides; must be present for lockfile to match --frozen-lockfile
 COPY package*.json pnpm-lock.yaml* pnpm-workspace.yaml ./
