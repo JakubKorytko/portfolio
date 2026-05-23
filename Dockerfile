@@ -4,7 +4,8 @@ WORKDIR /app
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
-COPY package*.json pnpm-lock.yaml* ./
+# pnpm-workspace.yaml holds overrides; must be present for lockfile to match --frozen-lockfile
+COPY package*.json pnpm-lock.yaml* pnpm-workspace.yaml ./
 
 RUN pnpm install --frozen-lockfile
 
